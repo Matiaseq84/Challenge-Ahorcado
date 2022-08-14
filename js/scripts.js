@@ -129,6 +129,8 @@ function generarInput() {
 
 function comprobarLetras() {
 
+    document.querySelector('.aviso-mayuscula').focus()
+
     let { intentos, letrasIngresadas } = usuarioPalabra
     const { palabraSecreta } = generadorPalabra
     
