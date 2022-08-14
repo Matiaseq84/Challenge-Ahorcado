@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section class="bienvenida" id="bienvenida">
+            <div class="botones-bienvenida" >
+                <button  class="boton-iniciar-juego" id="iniciar">INICIAR JUEGO</button>
+
+                <button class="boton-agregar-palabra" id="agregar">AGREGAR PALABRA</button>
+            </div>
+
+        </section>
+        <section class="ahorcado" id='ahorcado' style="display: none">
+            <p class="aviso-mayuscula">Use sólo mayúsculas</p>
+            <div class="dibujo-ahorcado" style="display: none;">
+                <div class="line-1 parte-cuerpo" style="display: none;"></div>
+                <div class="line-2 parte-cuerpo" style="display: none;"></div>
+                <div class="line-3 parte-cuerpo" style="display: none;"></div>
+                <div class="head parte-cuerpo" style="display: none;"></div>
+                <div class="arm-l parte-cuerpo" style="display: none;"></div>
+                <div class="arm-r parte-cuerpo" style="display: none;"></div>
+                <div class="body parte-cuerpo" style="display: none;"></div>
+                <div class="leg-l parte-cuerpo" style="display: none;"></div>
+                <div class="leg-r parte-cuerpo" style="display: none;"></div>
+            </div>
+                
+            <div class="base"></div>
+
+            <div class="mensaje">
+                <!-- <p class="ganador">GANASTE, FELICIDADES!</p> -->
+            </div>
+
+            <div class="palabra"></div>
+
+            <div class="letras-ingresadas">
+                <!-- <span class="letra-ingresada">A</span> -->
+                
+
+            </div>
+             
+                
+            <div class="botones">
+                <button class="boton-nuevo-juego" id="nuevo">Nuevo Juego</button>
+                <button class="boton-rendir" id="desistir">Rendirse</button>
+            </div>    
+
+            
+        </section>
+        <section>
+            <div class="agregar-palabra" style="display: none;">
+                <div class="agregar-input ">
+                    <input class="nueva-palabra" type="text" id="palabra">
+                </div>
+                
+                <div class="botones-agregar">
+                    
+                        <p class="mensaje-agregar">Máx. 8 carácteres</p>
+                        <div>
+                            <button class="guardar-palabra">Guardar Palabra</button>
+                            <button class="cancelar">Cancelar</button>
+                        </div>
+                    
+                        
+                        
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

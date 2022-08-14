@@ -1,0 +1,288 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.bienvenida {
+  height: 66rem;  
+  position: relative;
+  border: 3px solid green; 
+  background: black;
+ 
+    
+    
+}
+
+.botones-bienvenida {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+    
+
+
+.boton-iniciar-juego {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.ahorcado {
+    width: 940px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #555;
+    
+}
+
+.aviso-mayuscula {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+}
+
+.line-1 {
+    position: absolute;
+width: 4.5px;
+height: 34rem;
+left: 550.67px;
+top: 9rem;
+background: black;
+  }
+
+.line-2 {
+    position: absolute;
+width: 177.75px;
+height: 4.5px;
+left: 550.67px;
+top: 9rem;
+
+background: #0A3871;
+border-radius: 8px;
+}
+
+.line-3 {
+    position: absolute;
+width: 4.5px;
+height: 49.5px;
+left: 725.92px;
+top: 9rem;
+
+background: #0A3871;
+border-radius: 8px;
+}
+
+.head {
+    position: absolute;
+width: 63px;
+height: 63px;
+left: 69.6rem;
+top: 13.5rem;
+border-radius: 50%;
+border: 5px solid black;
+
+}
+
+.arm-l {
+    position: absolute;
+width: 4.5px;
+height: 72px;
+left: 705.75px;
+top: 19.1rem;
+background: #0A3871;
+border-radius: 8px;
+transform: rotate(30deg);
+
+}
+
+.arm-r {
+    position: absolute;
+width: 4.5px;
+height: 72px;
+left: 744.52px;
+top: 19.1rem;
+background: #0A3871;
+border-radius: 8px;
+transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+
+.body {
+    position: absolute;
+width: 4.5px;
+height: 135px;
+left: 725.52px;
+top: 19.5rem;
+background: #0A3871;
+
+}
+
+.leg-l {
+    position: absolute;
+width: 4.5px;
+height: 72px;
+left: 706.75px;
+top: 31.9rem;
+background: #0A3871;
+border-radius: 8px;
+transform: rotate(30deg);
+}
+
+.leg-r {
+    position: absolute;
+width: 4.5px;
+height: 72px;
+left: 743.52px;
+top: 31.9rem;
+background: #0A3871;
+border-radius: 8px;
+transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+
+}
+
+.base {
+    position: absolute;
+    width: 395px;
+    height: 5px;
+    left: 500px;
+    top: 42.5rem;
+    background: #0A3871;
+    border-radius: 8px;
+}
+
+.ganador {
+    position: absolute;
+    top: 25rem;
+    right: 30rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: green;
+}
+
+.perdedor {
+    position: absolute;
+    top: 25rem;
+    right: 30rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: red; 
+}
+
+.palabra {
+    position: absolute;
+    bottom: 22%;
+    left: 25%;
+}
+
+.letra {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 3rem;
+    border: none;
+    border-bottom: 0.2rem solid red;
+    font-size: 3.2rem;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+.letras-ingresadas {
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+}
+
+.letra-ingresada {
+    font-size: 3.5rem;
+    margin-left: 3rem ;
+}
+
+
+.botones {
+    position: absolute;
+    bottom: 0;
+    right: 480px;
+}
+
+.boton-nuevo-juego {
+    width: 240px;
+    background:  #0A3871;
+    border-radius: 18px;
+    border: none;
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-rendir {
+    width: 240px;
+    background: white;
+    border-radius: 18px;
+    border-color: #0A3871;
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.agregar-palabra {
+    width: 100%;
+    height: 100vh;
+    background: #555;
+    
+}
+
+.agregar-input {
+    
+    width: 100%;
+    height: 73%;
+    display: flex;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+
+}
+
+.nueva-palabra {
+    background: transparent;
+    width: 25rem;
+    height: 4rem;
+    border: 2px solid black;
+}
+
+.botones-agregar {
+    height: 27%;
+    display: flex;
+    flex-direction: column;
+    text-align: center ; 
+    padding: 8rem    
+}
+
+.guardar-palabra {
+    margin-left: 6rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.cancelar {
+    margin-left: 6rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.mensaje-agregar {
+    font-size: 2rem;
+    font-weight: bold;
+}
